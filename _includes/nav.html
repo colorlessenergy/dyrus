@@ -1,0 +1,9 @@
+<nav>
+    <h1 class="title">{{ site.title }}</h1>
+    <button id="nav-toggle">
+        {% include hamburgermenu.html %}
+    </button>
+</nav>
+
+<!-- outside because i want absolute to be window -->
+{% include mobilemenu.html %}
