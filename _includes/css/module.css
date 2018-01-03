@@ -1,5 +1,5 @@
 .mobilemenu {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     background-color: #fff;
@@ -42,11 +42,11 @@
 .mobilemenu__a:after, .mobilemenu__a:before {
     content: "";
     position: absolute;
-     bottom: -5px;
-     z-index: -1;
-     display: block;
-     height: 20px;
-     background: #f5c32d;
+    bottom: -5px;
+    z-index: -1;
+    display: block;
+    height: 20px;
+    background: #f5c32d;
 }
 
 .mobilemenu__a:after, .mobilemenu__a:hover:before {

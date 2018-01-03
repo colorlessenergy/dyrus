@@ -4,3 +4,5 @@
 {% include css/base.css %}
 
 {% include css/module.css %}
+
+{% include css/layout.css %}
