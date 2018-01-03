@@ -102,3 +102,20 @@ button {
     width: 100%;
     transition: width .3s .1s;
 }
+
+#icon-hamburger rect {
+    transition: all 0.5s ease;
+}
+
+#icon-hamburger.rect rect:first-child {
+    transform: rotate(35deg) translate(3px, -1px);
+}
+
+#icon-hamburger.rect rect:nth-child(2) {
+    transform: rotate(-35deg) translate(-7px, 1px);
+
+}
+
+#icon-hamburger.rect rect:nth-child(3) {
+    opacity: 0;
+}
