@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dyrus</title>
+    <title>Brian</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <nav>
-    <h1 class="title">dyrus</h1>
+    <h1 class="res-title--reverse title">Brian</h1>
     <button id="nav-toggle">
         <svg id="icon-hamburger" viewBox="0 0 26 17" width="100%" height="100%">
     <rect x="3" width="20" height="3" rx="1.5" ry="1.5"></rect>
@@ -18,9 +20,13 @@
     <rect y="7" width="26" height="3" rx="1.5" ry="1.5"></rect>
 </svg>
     </button>
+
+    <div class="mobilemenu__overlay">
+        
+    </div>
 </nav>
 
-<!-- outside because i want absolute to be window -->
+<!-- outside because i want position absolute to be the window -->
 <div class="mobilemenu">
     <ul class="mobilemenu__ul">
         <li class="mobilemenu__li"><a class="mobilemenu__a" href="#">home</a></li>
@@ -31,7 +37,7 @@
     </ul>
 
     <footer>
-    <h3>Dyrus </h3>
+    <h3>Brian </h3>
     <p>
         Primary location
         Twitch
@@ -40,6 +46,38 @@
 </div>
 
 
+<div class="container">
+  <div class="outer-carousel__content">
+    <h1 class="res-title">Brian</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <p>
+        Quisque interdum quam ac massa pulvinar, id efficitur enim porta.
+    </p>
+    <h3 class="subtitle--margin"><a class="subtitle" href="#">portfolio</a></h3>
+  </div>
+  <img class="res-img" src="/images/snowman-1.jpg " alt="snowman">
+    <div class="outer-carousel">
+        <div class="special animation-enter-gray"></div>
+        <div class="caption animation-enter-yellow"></div>
+        <div class="owl-carousel">
+          <div class="bg-img" style="background-image:url('images/snowman-1.jpg')">
+
+          </div>
+          <div class="bg-img" style="background-image:url('images/snowman-2.jpg')">
+          </div>
+          <div class="bg-img" style="background-image:url('images/snowman-3.jpg')">
+          </div>
+
+        </div>
+      </div>
+</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
