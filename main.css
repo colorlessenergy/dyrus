@@ -6,3 +6,5 @@
 {% include css/module.css %}
 
 {% include css/layout.css %}
+
+{% include css/owl-carousel.css %}
