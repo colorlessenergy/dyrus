@@ -1,11 +1,13 @@
 .mobilemenu {
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-color: #fff;
     top: 0;
+    right: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease;
+    z-index: 20;
 }
 
 .mobilemenu--animation {
@@ -22,8 +24,9 @@
     margin: 20px 0;
 }
 
-.mobilemenu__a {
+.mobilemenu__a, .subtitle {
     color: #222;
+    display: inline;
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -33,13 +36,13 @@
     margin: 20px 0;
 }
 
-.mobilemenu__a:before {
+.mobilemenu__a:before, .subtitle:before {
     width: 100%;
     right: 0;
     transition: width .3s .1s;
 }
 
-.mobilemenu__a:after, .mobilemenu__a:before {
+.mobilemenu__a:after, .mobilemenu__a:before, .subtitle:after, .subtitle:before {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -49,18 +52,40 @@
     background: #f5c32d;
 }
 
-.mobilemenu__a:after, .mobilemenu__a:hover:before {
+.mobilemenu__a:after, .mobilemenu__a:hover:before, .subtitle:after, .subtitle:hover:before {
     width: 0;
     transition: width .3s;
 }
 
-.mobilemenu__a:after {  
+.mobilemenu__a:after, .subtitle:after {  
     left: 0;
 }
 
-.mobilemenu__a:hover:after {
+.mobilemenu__a:hover:after, .subtitle:hover:after {
     width: 100%;
     transition: width .3s .1s;
+}
+
+.mobilemenu__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+.mobilemenu__overlay--animation {
+    opacity: 1;
+    visibility: visible;
+}
+
+.subtitle--margin {
+    margin: 20px 20px 20px 0;
 }
 
 #icon-hamburger rect {

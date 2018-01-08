@@ -1,9 +1,13 @@
 <nav>
-    <h1 class="title">{{ site.title }}</h1>
+    <h1 class="res-title--reverse title">{{ site.title }}</h1>
     <button id="nav-toggle">
         {% include html/hamburgermenu.html %}
     </button>
+
+    <div class="mobilemenu__overlay">
+        
+    </div>
 </nav>
 
-<!-- outside because i want absolute to be window -->
+<!-- outside because i want position absolute to be the window -->
 {% include html/mobilemenu.html %}
