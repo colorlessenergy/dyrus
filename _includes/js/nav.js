@@ -1,5 +1,5 @@
 var navMenu = document.querySelector('#nav-toggle');
-
+var menuOverlay = document.querySelector('.mobilemenu__overlay');
 
 navMenu.addEventListener('click', function () {
 
@@ -9,5 +9,7 @@ navMenu.addEventListener('click', function () {
     let slideAnimation = document.querySelector('.mobilemenu')
     slideAnimation.classList.toggle('mobilemenu--animation');
     
+
+    menuOverlay.classList.toggle('mobilemenu__overlay--animation');
     console.log(slideAnimation)
 })
