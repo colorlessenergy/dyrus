@@ -18,6 +18,10 @@ h1 {
     margin: 0 20px;
 }
 
+.title {
+    visibility: visible;
+}
+
 nav {
     align-items: center;
     display: flex;
@@ -35,5 +39,42 @@ button {
     position: relative;
     height: 25px;
     width: 25px;
-    z-index: 5;
+    z-index: 25;
+}
+
+p {
+    font-size: 19px;
+    margin: 20px 20px 20px 0;
+    line-height: 2.0;   
+}
+
+img {
+    max-height: 400px;
+}
+
+.res-title {
+    display: none;
+}
+
+
+@media screen and (min-width: 951px) {
+
+.res-img {
+    display: none;
+}
+
+.title {
+    visibility: hidden;
+}
+
+.res-title {
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        max-height: 200px;
+    }
 }

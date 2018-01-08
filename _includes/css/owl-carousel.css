@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 20px;
+}
+.outer-carousel div.bg-img, .outer-carousel .owl-carousel, .outer-carousel .owl-stage-outer, .outer-carousel .owl-stage, .outer-carousel .owl-item {
+    height: 100%;
+}
+@keyframes box-animation {
+    0% {
+        height: 0;
+   }
+    100% {
+        height: 200px;
+   }
+}
+.bg-img {
+    background-position: 50%;
+    position: relative;
+}
+
+.outer-carousel {
+    display: none;
+}
+
+@media screen and (min-width: 951px) {
+    .outer-carousel {
+        display: block;
+        width: 70%;
+        max-width: 70%;
+        position: relative;
+   }
+
+   .outer-carousel__content {
+        width: 30%;
+        padding-right: 60px;
+   }
+    .outer-carousel div.caption {
+        position: absolute;
+        height: 0;
+        top: -43px;
+        left: 10%;
+        font-size: 100px;
+        background-color: gold;
+        width: 300px;
+        z-index: 15;
+   }
+    .outer-carousel div.special {
+        position: absolute;
+        height: 0;
+        top: -43px;
+        left: 10%;
+        font-size: 100px;
+        background-color: rgba(236, 234, 234, 0.8);
+        width: 300px;
+        z-index: 15;
+   }
+    .animation-enter-yellow {
+        animation: box-animation, box-animation;
+        animation-delay: 1s, 4s;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal, reverse;
+        animation-fill-mode: forwards;
+   }
+    .animation-enter-gray {
+        animation: box-animation, box-animation;
+        animation-delay: 0.5s, 5s;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal, reverse;
+        animation-fill-mode: forwards;
+   }
+    .container {
+        display: flex;
+        flex-direction: unset;
+        min-height: 90vh;
+        height: 90vh;
+        padding: 20px 71px 100px;
+   }
+    .owl-stage {
+        display: block;
+   }
+}
