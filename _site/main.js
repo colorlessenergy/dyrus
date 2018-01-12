@@ -17,9 +17,9 @@ navMenu.addEventListener('click', function () {
 // a carousel using owljs
 
 $(document).ready(function ( ) {
-  var owl = $(".owl-carousel")
+  // first carousel
+  var owl = $(".owl-carousel.first");
   var autoplayTime = 6500;
-  var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
   
   owl.owlCarousel({
       items:1,
@@ -59,6 +59,19 @@ $(document).ready(function ( ) {
       }, autoplayTime - 100)
   
     });
+
+
+    var owl2 = $('.owl-carousel.second');
+
+    owl2.owlCarousel({
+      items:1,
+      autoplay:true,
+      nav: true,
+      dotsContainer: '#customDots',
+      navContainer: '#customNav',
+      navText : ["","->"],
+      autoplayTimeout: 6500,
+    })
   
 
 });
