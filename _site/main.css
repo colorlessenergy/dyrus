@@ -202,7 +202,7 @@ footer h3 {
 /* base style to make the owljs images show up on screen */
 
 .outer-carousel div.bg-img, .outer-carousel .owl-carousel, .outer-carousel .owl-stage-outer, .outer-carousel .owl-stage, .outer-carousel .owl-item,
-.second-carousel .container-carousel-2 div.bg-img, .second-carousel .container-carousel-2 .owl-carousel, .second-carousel .container-carousel-2 .owl-stage-outer, .second-carousel .container-carousel-2 .owl-stage,
+.second-carousel div.bg-img, .second-carousel .container-carousel-2 .owl-carousel, .second-carousel .owl-stage-outer, .second-carousel .owl-stage,
 .second-carousel .container-carousel-2 .owl-item {
     height: 100%;
 }
@@ -300,19 +300,13 @@ footer h3 {
     padding: 100px;
 }
 
-.second-carousel .container-carousel-2-text .owl-carousel__div--second {
-    position: relative;
+.second-carousel .bg {
+    position: absolute;
     background-color: gold;
-    right: 21%;
-    height: 56%;
-    top: 17%;
-}
-
-.second-carousel .container-carousel-2-text .owl-carousel__div--second .owl-item.active div {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-end;
+    transform: translateX(-160px);
+    height: 250px;
+    width: 100%;
+    z-index: 1;
 }
 
 .second-carousel .container-carousel-2  {
@@ -324,5 +318,34 @@ footer h3 {
 }
 
 .second-carousel .container-carousel-2-text {
+    padding-left: 64px;
+    margin-top: 3rem;
     width: 40%;
+    position: relative;
 }
+
+.second-carousel .container-carousel-2-text .owl-dot span {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.second-carousel .container-carousel-2-text .owl-controls {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50px;
+    padding-bottom: 16px;
+}
+
+.second-carousel .owl-theme .owl-nav [class*=owl-] {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+}
+.second-carousel .container-carousel-2 .owl-item div {
+    padding-left: 50px;
+}
+
+.second-carousel .container-carousel-2-text .owl-carousel {
+    margin-top: 128px;
+}
+

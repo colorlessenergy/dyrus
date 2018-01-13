@@ -51,7 +51,7 @@ $(document).ready(function ( ) {
       nav: true,
       dotsContainer: '#customDots',
       navContainer: '#customNav',
-      navText : ["","->"],
+      navText : ["","<img src='images/svg/gallery-right.svg' />'"],
       autoplayTimeout: 6500,
     })
   
