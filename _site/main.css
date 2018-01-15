@@ -13,7 +13,7 @@ html, body {
 
 a {
     text-decoration: none;
-    color: #383737;
+    color: #000;
 }
 
 h1 {
@@ -300,9 +300,9 @@ footer h3 {
 
 .second-carousel {
     display: flex;
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 1px;
     padding: 100px;
+    height: 100vh;
 }
 
 .second-carousel .bg {
@@ -351,13 +351,13 @@ footer h3 {
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2 {
-    margin: 0;
+    margin: 0 0 4px 0;
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h2 {
     font-weight: 700;
     line-height: 1.2;
-    font-size: 2.75rem;
+    font-size: 2.95rem;
     text-transform: uppercase;
 }
 
@@ -391,3 +391,38 @@ footer h3 {
     margin-top: 80px;
 }
 
+@media screen and (max-width: 961px) {
+    .second-carousel .container-carousel-2-text {
+        padding: 32px 0 0 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .second-carousel .container-carousel-2-text .bg {
+        height: 100px;
+        width: 100%;
+    }
+
+    .second-carousel .container-carousel-2-text .owl-item div, .second-carousel .container-carousel-2-text .owl-controls {
+        padding-left: 0;
+    }
+
+    .second-carousel {
+        padding: 50px 30px;
+        flex-direction: column;
+    }
+
+    .second-carousel .container-carousel-2-text .owl-carousel {
+        margin-top: 16px;
+    }
+
+    .second-carousel .container-carousel-2-text .owl-item div h2 {
+        font-size: 41px;
+    }
+
+    .second-carousel .container-carousel-2 {
+        max-height: 300px;
+        height: 100vh;
+        width: 100%;
+    }
+}

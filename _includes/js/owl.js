@@ -53,7 +53,10 @@ $(document).ready(function ( ) {
       navContainer: '#customNav',
       navText : ["","<img src='images/svg/gallery-right.svg' />'"],
       autoplayTimeout: 6500,
-    })
+    });
+
+    owl2.trigger('refresh.owl.carousel');
+
   
 
 });
