@@ -11,6 +11,11 @@ html, body {
     line-height: 1.4;
 }
 
+a {
+    text-decoration: none;
+    color: #383737;
+}
+
 h1 {
     font-weight: 400;
     text-transform: uppercase;
@@ -302,7 +307,7 @@ footer h3 {
 
 .second-carousel .bg {
     position: absolute;
-    background-color: gold;
+    background-color: #ffd248;
     transform: translateX(-160px);
     height: 250px;
     width: 100%;
@@ -320,7 +325,7 @@ footer h3 {
 .second-carousel .container-carousel-2-text {
     padding-left: 64px;
     margin-top: 3rem;
-    width: 40%;
+    width: 37%;
     position: relative;
 }
 
@@ -341,11 +346,48 @@ footer h3 {
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
 }
-.second-carousel .container-carousel-2 .owl-item div {
+.second-carousel .container-carousel-2-text .owl-item div {
     padding-left: 50px;
 }
 
+.second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2 {
+    margin: 0;
+}
+
+.second-carousel .container-carousel-2-text .owl-item div h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+}
+
+.second-carousel .container-carousel-2-text .owl-item div p {
+    margin: 0;
+    line-height: 2.125rem;
+}
+
+.second-carousel .container-carousel-2-text .owl-item div p a{
+    padding: 0 50px 0 10px
+ }
+
+.second-carousel .container-carousel-2-text .owl-item div span::after {
+    content: " ";
+    position: relative;
+    left: 10px;
+    top: -7px;
+    display: inline-block;
+    height: 2px;
+    width: 89px;
+    background-color: #fff;
+}
+
+.second-carousel .container-carousel-2-text .owl-item div span {
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+
 .second-carousel .container-carousel-2-text .owl-carousel {
-    margin-top: 128px;
+    margin-top: 80px;
 }
 

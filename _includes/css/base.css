@@ -11,6 +11,11 @@ html, body {
     line-height: 1.4;
 }
 
+a {
+    text-decoration: none;
+    color: #383737;
+}
+
 h1 {
     font-weight: 400;
     text-transform: uppercase;
