@@ -94,8 +94,8 @@
 
 .second-carousel {
     display: flex;
-    min-height: 1px;
     padding: 100px;
+    min-height: 100vh;
     height: 100vh;
 }
 
@@ -144,11 +144,12 @@
     padding-left: 50px;
 }
 
-.second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2 {
+.second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2,
+.side-content__sidebar .side-content__subtitle h2 {
     margin: 0 0 4px 0;
 }
 
-.second-carousel .container-carousel-2-text .owl-item div h2 {
+.second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2 {
     font-weight: 700;
     line-height: 1.2;
     font-size: 2.95rem;
@@ -194,7 +195,6 @@
 
     .second-carousel .container-carousel-2-text .bg {
         height: 100px;
-        width: 100%;
     }
 
     .second-carousel .container-carousel-2-text .owl-item div, .second-carousel .container-carousel-2-text .owl-controls {
@@ -218,5 +218,11 @@
         max-height: 300px;
         height: 100vh;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .second-carousel .bg {
+        transform: translateX(-40px)
     }
 }

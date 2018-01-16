@@ -33,7 +33,6 @@
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-    margin: 20px 0;
 }
 
 .mobilemenu__a:before, .subtitle:before {
@@ -88,6 +87,75 @@
     margin: 20px 20px 20px 0;
 }
 
+.side-content {
+    background-image: url('images/hot-air-balloon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.side-content__sidebar {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-height: 100vh;
+    padding: 150px 64px 150px 120px;
+}
+
+.side-content__subtitle {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.side-content__subtitle:before {
+    content: " ";
+    position: absolute;
+    top: -9%;
+    left: -10%;
+    z-index: -1;
+    display: block;
+    width: calc(100% + 220px);
+    height: 100%;
+    background-color: #ffd248;
+}
+
+.side-content__headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-content__headline h3 {
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22.3px;
+}
+
+.side-content__span {
+    position: relative;
+    display: block;
+    margin-left: 1rem;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.side-content__firstp {
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.side-content__lastp {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
 #icon-hamburger rect {
     transition: all 0.5s ease;
 }
@@ -103,4 +171,11 @@
 
 #icon-hamburger.rect rect:nth-child(3) {
     opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .side-content__sidebar {
+        padding: 50px;
+        width: 100%;
+    }
 }
