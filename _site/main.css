@@ -187,14 +187,14 @@ img {
     padding: 150px 64px 150px 120px;
 }
 
-.side-content__subtitle {
+.side-content__subtitle, .more-info__subtitle {
     position: relative;
     z-index: 1;
     margin-top: 30px;
     display: inline-block;
 }
 
-.side-content__subtitle:before {
+.side-content__subtitle:before, .more-info__subtitle:before {
     content: " ";
     position: absolute;
     top: -9%;
@@ -206,13 +206,13 @@ img {
     background-color: #ffd248;
 }
 
-.side-content__headline {
+.side-content__headline, .more-info__headline {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.side-content__headline h3 {
+.side-content__headline h3, .more-info__headline h3 {
     text-transform: uppercase;
     margin: 0;
     color: #fff;
@@ -220,7 +220,7 @@ img {
     font-size: 22.3px;
 }
 
-.side-content__span {
+.side-content__span, .more-info__span {
     position: relative;
     display: block;
     margin-left: 1rem;
@@ -239,6 +239,28 @@ img {
     margin: 0;
     position: relative;
     z-index: 2;
+}
+
+.more-info {
+    display: flex;
+    padding: 100px;
+    min-height: 100vh;
+}
+
+
+.more-info__bg-split {
+    width: 70%;
+}
+
+.more-info__bg-img {
+    background-image: url('images/sunset.jpg');
+    height: 100%;
+    width: 100%;   
+}
+
+.more-info__split-text {
+    width: 30%;
+    padding-left: 50px;
 }
 
 
@@ -430,7 +452,7 @@ footer h3 {
     margin: 0 0 4px 0;
 }
 
-.second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2 {
+.second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2 {
     font-weight: 700;
     line-height: 1.2;
     font-size: 2.95rem;
@@ -485,6 +507,7 @@ footer h3 {
     .second-carousel {
         padding: 50px 30px;
         flex-direction: column;
+        height: auto;
     }
 
     .second-carousel .container-carousel-2-text .owl-carousel {
