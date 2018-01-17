@@ -194,7 +194,7 @@ img {
     display: inline-block;
 }
 
-.side-content__subtitle:before, .more-info__subtitle:before {
+.side-content__subtitle:before, .more-info__subtitle:before, .blog__subtitle:before {
     content: " ";
     position: absolute;
     top: -9%;
@@ -211,13 +211,13 @@ img {
     top: -12%;
 }
 
-.side-content__headline, .more-info__headline {
+.side-content__headline, .more-info__headline, .blog__title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.side-content__headline h3, .more-info__headline h3 {
+.side-content__headline h3, .more-info__headline h3, .blog__title h3 {
     text-transform: uppercase;
     margin: 0;
     color: #fff;
@@ -225,7 +225,7 @@ img {
     font-size: 22.3px;
 }
 
-.side-content__span, .more-info__span {
+.side-content__span, .more-info__span, .blog__span {
     position: relative;
     display: block;
     margin-left: 1rem;
@@ -257,7 +257,7 @@ img {
     width: 68%;
 }
 
-.more-info__bg-img {
+.more-info__bg-img, .blog__bg-img {
     background-image: url('images/sunset.jpg');
     height: 100%;
     width: 100%;   
@@ -269,6 +269,45 @@ img {
     padding-left: 50px;
 }
 
+.blog__title {
+    position: relative;
+}
+
+.blog__subtitle {
+    position: relative;
+    display: inline-block;
+}
+
+.blog__headline {
+    text-align: center;
+}
+
+.blog__subtitle:before {
+    width: 50%;
+    height: 120%;
+}
+
+.blog__div {
+    width: 33%;
+    height: 500px;
+}
+
+.blog__bg-img {
+    background-image: url('images/snowman-4.jpg');
+}
+
+.blog__container {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.blog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
 
 #icon-hamburger rect {
     transition: all 0.5s ease;
@@ -495,11 +534,12 @@ footer h3 {
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2,
-.side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2 {
+.side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2, .blog h2 {
     margin: 0 0 4px 0;
 }
 
-.second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2 {
+.second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2, 
+.blog h2{
     font-weight: 700;
     line-height: 1.2;
     font-size: 2.95rem;
