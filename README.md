@@ -4,7 +4,7 @@
 
 ## Description
 
-_a website about dyrus a league of legends streamer_
+_a website template_
 
 ## Setup/Installation Requirements
 
