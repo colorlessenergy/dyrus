@@ -145,7 +145,7 @@
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2,
-.side-content__sidebar .side-content__subtitle h2 {
+.side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2 {
     margin: 0 0 4px 0;
 }
 

@@ -181,7 +181,7 @@ img {
 }
 
 .side-content__sidebar {
-    width: 30%;
+    width: 40%;
     background-color: rgba(255, 255, 255, 0.8);
     max-height: 100vh;
     padding: 150px 64px 150px 120px;
@@ -204,6 +204,11 @@ img {
     width: calc(100% + 220px);
     height: 100%;
     background-color: #ffd248;
+}
+
+.more-info__subtitle--pos:before {
+    left: -150px;
+    top: -12%;
 }
 
 .side-content__headline, .more-info__headline {
@@ -229,13 +234,13 @@ img {
     background-color: #fff;
 }
 
-.side-content__firstp {
+.side-content__firstp, .more-info__firstp {
     font-size: 18px;
     margin: 0;
     padding-bottom: 16px;
 }
 
-.side-content__lastp {
+.side-content__lastp, .more-info__lastp {
     margin: 0;
     position: relative;
     z-index: 2;
@@ -249,7 +254,7 @@ img {
 
 
 .more-info__bg-split {
-    width: 70%;
+    width: 68%;
 }
 
 .more-info__bg-img {
@@ -259,7 +264,8 @@ img {
 }
 
 .more-info__split-text {
-    width: 30%;
+    width: 32%;
+    margin-top: 45px;
     padding-left: 50px;
 }
 
@@ -286,6 +292,47 @@ img {
         padding: 50px;
         width: 100%;
     }
+
+    .more-info {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 30px;
+    }
+
+    .more-info__bg-split {
+        width: 100%;
+    }
+
+    .more-info__bg-img {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .more-info__split-text {
+        padding: 0;
+        width: 100%;
+    }
+
+    .more-info__subtitle:before {
+        width: calc(100% + 60px);
+    }
+
+    .more-info__subtitle--pos:before {
+        left: -30px;
+    }
+
+    .more-info__subtitle {
+        display: block;
+    }
+
+    .more-info__span {
+        width: 45%;
+    }
+
+    .more-info__headline {
+        justify-content: unset;
+    }
+    
 }
 
 footer {
@@ -448,7 +495,7 @@ footer h3 {
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2,
-.side-content__sidebar .side-content__subtitle h2 {
+.side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2 {
     margin: 0 0 4px 0;
 }
 
