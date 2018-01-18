@@ -110,7 +110,7 @@ img {
     margin: 20px 0;
 }
 
-.mobilemenu__a, .subtitle {
+.mobilemenu__a, .subtitle, .blog__h2 {
     color: #222;
     display: inline;
     font-size: 25px;
@@ -195,7 +195,7 @@ img {
     display: inline-block;
 }
 
-.side-content__subtitle:before, .more-info__subtitle:before, .blog__subtitle:before {
+.side-content__subtitle:before, .more-info__subtitle:before, .blog__subtitle:before, .blog__h2:before { 
     content: " ";
     position: absolute;
     top: -9%;
@@ -295,6 +295,7 @@ img {
 
 .blog__bg-img {
     background-image: url('images/snowman-4.jpg');
+    height: 250px;
 }
 
 .blog__container {
@@ -308,6 +309,20 @@ img {
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
+}
+
+.blog__h2 {
+    display: block;
+    font-size: 34px;
+    font-weight: 300;
+    padding-right: 32px;
+    z-index: 1;
+}
+
+.blog__h2:before {
+    width: 100%;
+    top: -16px;
+    left: -15px;
 }
 
 #icon-hamburger rect {
@@ -335,7 +350,7 @@ img {
 
     .more-info {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 50px 30px;
     }
 
@@ -345,6 +360,7 @@ img {
 
     .more-info__bg-img {
         width: 100%;
+        background-position: center;
         min-height: 300px;
     }
 
@@ -371,6 +387,10 @@ img {
 
     .more-info__headline {
         justify-content: unset;
+    }
+
+    .side-content__sidebar {
+        background-color: rgba(255, 255, 255, 0.6)
     }
     
 }
@@ -410,7 +430,7 @@ footer h3 {
         height: 200px;
    }
 }
-.bg-img {
+.bg-img, .blog__bg-img, .side-content {
     background-position: 50%;
     position: relative;
 }
@@ -540,7 +560,7 @@ footer h3 {
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2, 
-.blog h2{
+.blog__subtitle h2{
     font-weight: 700;
     line-height: 1.2;
     font-size: 2.95rem;

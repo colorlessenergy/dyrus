@@ -20,7 +20,7 @@
         height: 200px;
    }
 }
-.bg-img {
+.bg-img, .blog__bg-img, .side-content {
     background-position: 50%;
     position: relative;
 }
@@ -150,7 +150,7 @@
 }
 
 .second-carousel .container-carousel-2-text .owl-item div h2, .side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2, 
-.blog h2{
+.blog__subtitle h2{
     font-weight: 700;
     line-height: 1.2;
     font-size: 2.95rem;
