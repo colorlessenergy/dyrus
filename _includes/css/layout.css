@@ -1,12 +1,34 @@
-footer {
+.mobilemenu .footer {
     padding: 60px;
 }
 
-footer p {
+.mobilemenu .footer p {
     color: #000;
     margin: 5px 0;
 }
 
-footer h3 {
+.mobilemenu .footer h3 {
     margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer ul p {
+    font-weight: 700;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer svg {
+    width: 25px;
 }
