@@ -8,6 +8,8 @@ $(document).ready(function ( ) {
       loop:true,
       autoplay:true,
       autoplayTimeout: autoplayTime,
+      mouseDrag: false,
+      touchDrag: false,
     });
   
     // this fixs the width being to small on the carousel
@@ -51,12 +53,16 @@ $(document).ready(function ( ) {
       nav: true,
       dotsContainer: '#customDots',
       navContainer: '#customNav',
-      navText : ["","<img src='images/svg/gallery-right.svg' />'"],
-      autoplayTimeout: 6500,
+      navText : ["",""],
+      autoplayTimeout: autoplayTime,
+      mouseDrag: false,
+      touchDrag: false
     });
 
     owl2.trigger('refresh.owl.carousel');
 
-  
+    $('#owlNext').click(function() {
+      owl2.trigger("next.owl.carousel");
+    });
 
 });
