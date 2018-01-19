@@ -149,13 +149,13 @@
     background-color: #fff;
 }
 
-.side-content__firstp, .more-info__firstp {
+.side-content__firstp, .more-info__firstp, .blog__firstp {
     font-size: 18px;
     margin: 0;
     padding-bottom: 16px;
 }
 
-.side-content__lastp, .more-info__lastp {
+.side-content__lastp, .more-info__lastp, .blog__lastp {
     margin: 0;
     position: relative;
     z-index: 2;
@@ -182,6 +182,10 @@
     width: 32%;
     margin-top: 45px;
     padding-left: 50px;
+}
+
+.blog {
+    padding: 120px 0;
 }
 
 .blog__title {
@@ -217,6 +221,10 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+}
+
+.blog__content {
+    margin: 20px 0;
 }
 
 .blog__wrapper {
