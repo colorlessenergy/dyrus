@@ -30,8 +30,8 @@ $(document).ready(function ( ) {
       touchDrag: false,
     });
   
-    // this fixs the width being to small on the carousel
-  owl.trigger('refresh.owl.carousel');
+  // this fixs the width being to small on the carousel
+  owlFixWidth(owl)
   
   // Fired before current slide change out
     owl.on('change.owl.carousel', function(event) {
@@ -44,8 +44,6 @@ $(document).ready(function ( ) {
   
   // Fired after current slide has been changed in
     owl.on('changed.owl.carousel', function(event) {
-      // $(".caption").eq(event.item.index).addClass('animation-enter-yellow');
-      // $(".special").eq(event.item.index).addClass('animation-enter-gray');
   
       // need this timeout for the first run since the class is manually added.
       setTimeout(function () {
@@ -63,6 +61,7 @@ $(document).ready(function ( ) {
     });
 
 
+    // the second owl carousel which is in the showcase gallery
     var owl2 = $('.owl-carousel.second');
 
     owl2.owlCarousel({
@@ -77,10 +76,18 @@ $(document).ready(function ( ) {
       touchDrag: false
     });
 
-    owl2.trigger('refresh.owl.carousel');
+    // fix the width from being a bit to small in the carousel
+    owlFixWidth(owl2)
 
+    // make the arrow key in the second carousel move both portions of the
+    // carousel (text, picture)
     $('#owlNext').click(function() {
       owl2.trigger("next.owl.carousel");
     });
 
 });
+
+
+function owlFixWidth(owl) {
+  owl.trigger('refresh.owl.carousel');
+}

@@ -35,7 +35,7 @@ nav {
 }
 
 button {
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
@@ -167,6 +167,11 @@ img {
 .mobilemenu__overlay--animation {
     opacity: 1;
     visibility: visible;
+}
+
+#nav-toggle {
+    position: fixed;
+    right: 0;
 }
 
 .subtitle--margin {
@@ -331,6 +336,10 @@ img {
     width: 100%;
     top: -16px;
     left: -15px;
+}
+
+#icon-hamburger {
+    position: static;
 }
 
 #icon-hamburger rect {
