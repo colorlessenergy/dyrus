@@ -430,9 +430,8 @@ img {
 
 footer {
     display: flex;
-    flex-direction: column;
     padding: 60px 0;
-    text-align: center;
+    justify-content: space-around;
 }
 
 footer ul p {
@@ -448,6 +447,13 @@ footer ul {
 
 footer svg {
     width: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* base style to make the owljs images show up on screen */
