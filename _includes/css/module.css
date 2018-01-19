@@ -270,6 +270,18 @@
         width: 100%;
     }
 
+    .blog {
+        padding: 45px 0 55px 0;
+    }
+
+    .blog__wrapper {
+        flex-direction: column;
+    }
+
+    .blog__div {
+        width: 100%;
+    }
+
     .more-info {
         display: flex;
         flex-direction: column;
