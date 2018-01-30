@@ -27,7 +27,7 @@
 .mobilemenu__a, .subtitle, .blog__h2 {
     color: #222;
     display: inline;
-    font-size: 25px;
+    font-size: 1.563em;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -142,7 +142,7 @@
     margin: 0;
     color: #fff;
     font-weight: 500;
-    font-size: 22.3px;
+    font-size: 1.394em;
 }
 
 .side-content__span, .more-info__span, .blog__span {
@@ -155,7 +155,7 @@
 }
 
 .side-content__firstp, .more-info__firstp, .blog__firstp {
-    font-size: 18px;
+    font-size: 1.125em;
     margin: 0;
     padding-bottom: 16px;
 }
@@ -240,7 +240,7 @@
 
 .blog__h2 {
     display: block;
-    font-size: 34px;
+    font-size: 2.125em;
     font-weight: 300;
     padding-right: 32px;
     z-index: 1;
