@@ -12,7 +12,7 @@ navMenu.addEventListener('click', function () {
 
     menuOverlay.classList.toggle('mobilemenu__overlay--animation');
     console.log(slideAnimation)
-})
+});
 
 // a carousel using owljs
 
