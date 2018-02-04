@@ -2,7 +2,8 @@ $(document).ready(function ( ) {
   // first carousel
   var owl = $(".owl-carousel.first");
   var autoplayTime = 6500;
-  
+  var enterAnimation;
+  var exitAnimation;
   owl.owlCarousel({
       items:1,
       loop:true,
@@ -16,31 +17,20 @@ $(document).ready(function ( ) {
   owlFixWidth(owl)
   
   // Fired before current slide change out
-    owl.on('change.owl.carousel', function(event) {
-  
-      // remove the manually added classes
-  
-      $(".caption").removeClass('animation-enter-yellow');
-      $(".special").removeClass('animation-enter-gray');
-    });
-  
-  // Fired after current slide has been changed in
-    owl.on('changed.owl.carousel', function(event) {
-  
-      // need this timeout for the first run since the class is manually added.
-      setTimeout(function () {
-        $(".caption").addClass('animation-enter-yellow');
-        $(".special").addClass('animation-enter-gray');
-      }, 10)
-  
-      // removes the classes 100 ms before slide has been changed
-  
-      setTimeout(function () {
-        $(".caption").removeClass('animation-enter-yellow');
-        $(".special").removeClass('animation-enter-gray');
-      }, autoplayTime - 100)
-  
-    });
+
+  firstCarousel(owl);
+
+  owl.on("resized.owl.carousel", function () {
+    window.clearTimeout(enterAnimation);
+    window.clearTimeout(exitAnimation);
+
+    owl.trigger('stop.owl.autoplay')
+
+    owl.trigger('play.owl.autoplay', [6500])
+
+
+    firstCarousel(owl);
+  })
 
 
     // the second owl carousel which is in the showcase gallery
@@ -72,4 +62,32 @@ $(document).ready(function ( ) {
 
 function owlFixWidth(owl) {
   owl.trigger('refresh.owl.carousel');
+}
+
+function firstCarousel (owl) {
+  owl.on('change.owl.carousel', function (event) {
+
+    // remove the manually added classes
+
+    $(".caption").removeClass('animation-enter-yellow');
+    $(".special").removeClass('animation-enter-gray');
+  });
+
+  // Fired after current slide has been changed in
+  owl.on('changed.owl.carousel', function (event) {
+
+    // need this timeout for the first run since the class is manually added.
+    enterAnimation = setTimeout(function () {
+      $(".caption").addClass('animation-enter-yellow');
+      $(".special").addClass('animation-enter-gray');
+    }, 10)
+
+    // removes the classes 100 ms before slide has been changed
+
+    exitAnimation = setTimeout(function () {
+      $(".caption").removeClass('animation-enter-yellow');
+      $(".special").removeClass('animation-enter-gray');
+    }, 6500 - 60)
+
+  });
 }
