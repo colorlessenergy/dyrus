@@ -328,6 +328,7 @@ img {
 
 .blog__bg-img {
     background-image: url('images/snowman-4.jpg');
+    background-size: cover;
     height: 250px;
 }
 
@@ -388,6 +389,12 @@ img {
 
 #icon-hamburger.rect rect:nth-child(3) {
     opacity: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .blog__div {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -463,7 +470,14 @@ img {
         background-color: rgba(255, 255, 255, 0.6)
     }
     
+    .mobilemenu {
+        width: 100%;
+    }
+
+
 }
+
+
 
 .mobilemenu .footer {
     padding: 60px;
@@ -692,9 +706,6 @@ footer svg {
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
 }
-.second-carousel .container-carousel-2-text .owl-item div {
-    padding-left: 50px;
-}
 
 .second-carousel .container-carousel-2-text .owl-item div h3, .second-carousel .container-carousel-2-text .owl-item div h2,
 .side-content__sidebar .side-content__subtitle h2, .more-info__subtitle h2, .blog h2 {
@@ -739,7 +750,7 @@ footer svg {
     margin-top: 80px;
 }
 
-@media screen and (max-width: 961px) {
+@media screen and (max-width: 1024px) {
     .second-carousel .container-carousel-2-text {
         padding: 32px 0 0 0;
         margin: 0;
@@ -750,7 +761,7 @@ footer svg {
         height: 100px;
     }
 
-    .second-carousel .container-carousel-2-text .owl-item div, .second-carousel .container-carousel-2-text .owl-controls {
+    .second-carousel .container-carousel-2-text .owl-controls {
         padding-left: 0;
     }
 

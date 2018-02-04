@@ -235,6 +235,7 @@
 
 .blog__bg-img {
     background-image: url('images/snowman-4.jpg');
+    background-size: cover;
     height: 250px;
 }
 
@@ -295,6 +296,12 @@
 
 #icon-hamburger.rect rect:nth-child(3) {
     opacity: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .blog__div {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -370,4 +377,10 @@
         background-color: rgba(255, 255, 255, 0.6)
     }
     
+    .mobilemenu {
+        width: 100%;
+    }
+
+
 }
+
